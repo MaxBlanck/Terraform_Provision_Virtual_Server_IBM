@@ -20,7 +20,7 @@ sudo docker pull ibmcom/websphere-traditional:profile
 docker run --name test -h test -p 9043:9043 -p 9443:9443 -d ibmcom/websphere-traditional:profile
 
 #Retrieve admin password with ID: wsadmin
-echo "Password Admin Websphere:"
-docker exec test cat /tmp/PASSWORD
+#echo "Password Admin Websphere:"
+#docker exec test cat /tmp/PASSWORD
 
 #Open console under https://localhost:9043/ibm/console/login.do?action=secure
