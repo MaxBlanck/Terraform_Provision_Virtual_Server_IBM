@@ -30,7 +30,7 @@ resource "ibm_compute_vm_instance" "virtual-server-1" {
     connection {
       type        = "ssh"
       user        = "root"
-      private_key = "${file("/.ssh/id_Terraform_Daimler_PoC")}." #https://www.terraform.io/docs/configuration/interpolation.html#file_path_
+      private_key = "${file("./.ssh/id_Terraform_Daimler_PoC")}." #https://www.terraform.io/docs/configuration/interpolation.html#file_path_
     }
   }
 
@@ -43,7 +43,7 @@ resource "ibm_compute_vm_instance" "virtual-server-1" {
      connection {
       type        = "ssh"
       user        = "root"
-      private_key = "${file("/.ssh/id_Terraform_Daimler_PoC")}." #https://www.terraform.io/docs/configuration/interpolation.html#file_path_
+      private_key = "${file("./.ssh/id_Terraform_Daimler_PoC")}." #https://www.terraform.io/docs/configuration/interpolation.html#file_path_
     }
   }
 }
